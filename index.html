@@ -4,46 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>Super Mario Bross</title>
+    <title>Mario & Luigi - Serviços Hidráulicos e Reparos</title>
 </head>
 
 <body>
 
     <div class="header">
-        <img class="logo-header"   src="./img/logo-header.png" alt="logo mario">
-        <a>Home</a>
-        <a>Nosso serviços</a>
-        <a>Fale conosco</a>
+        <img class="logo-header" src="./img/logo-header.png" alt="logo mario">
+        <a href="#home">Home</a>
+        <a href="#servicos">Nossos Serviços</a>
+        <a href="#contato">Fale Conosco</a>
     </div>
 
-    <div class="caixa-mae">
-
+    <section id="home" class="caixa-mae">
         <div class="caixa-principal">
             <div class="caixa-texto">
                 <img src="./img/logo.png" alt="logo do mario bros" class="logo-mario">
-                <p>
-
-                    Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!
-                </p>
-
+                <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
                 <p>
                     Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
                     entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o
-                    dia!
-                    Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+                    dia! Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
                 </p>
-                <br>
-
                 <button onclick="voceclicounobotao()">Entre em contato</button>
             </div>
-
             <div class="mario">
                 <img src="./img/mario.png" alt="imagem mario e luigi" class="imagem-mario-luigi">
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="servicos" class="secao-servicos">
+        <div class="container-servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="grid-servicos">
+                <div class="card-servico">
+                    <h3>🔧 Hidráulica</h3>
+                    <p>Vazamentos, entupimentos, instalação de torneiras e chuveiros</p>
+                </div>
+                <div class="card-servico">
+                    <h3>⚡ Elétrica</h3>
+                    <p>Instalação de tomadas, interruptores e pequenos reparos elétricos</p>
+                </div>
+                <div class="card-servico">
+                    <h3>🔨 Reparos Gerais</h3>
+                    <p>Montagem de móveis, fixação de objetos e pequenos consertos</p>
+                </div>
+                <div class="card-servico">
+                    <h3>🚿 Banheiro</h3>
+                    <p>Instalação e manutenção de vasos sanitários, pias e boxes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="secao-contato">
+        <div class="container-contato">
+            <h2>Fale Conosco</h2>
+            <div class="info-contato">
+                <div class="contato-texto">
+                    <p>Precisa de ajuda? Entre em contato conosco!</p>
+                    <p>Atendemos 24 horas para emergências</p>
+                    <button onclick="voceclicounobotao()">Solicitar Orçamento</button>
+                </div>
+                <div class="luigi-img">
+                    <img src="./img/luigi.png" alt="Luigi encanador">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="caixa-video">
         <video src="./video/video.mp4" autoplay muted loop></video>

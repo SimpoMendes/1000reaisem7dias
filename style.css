@@ -107,9 +107,15 @@ p {
     gap: 20px;
     margin: 20px;
     position: fixed;
-    margin-left: 20pix;
+    z-index: 1000;
     cursor: pointer;
     transition: 0.5s color ease-in-out;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s all ease-in-out;
 }
 
 .header a:hover {
@@ -119,6 +125,10 @@ p {
 
 .header img {
     width: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .formulario {
@@ -162,6 +172,100 @@ textarea {
     top: 0;
 }
 
+.secao-servicos {
+    min-height: 100vh;
+    padding: 100px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1;
+}
+
+.container-servicos {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-servicos h2 {
+    color: #f10707;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card-servico {
+    background: linear-gradient(135deg, #c51111, #f10707);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.card-servico:hover {
+    transform: translateY(-10px);
+}
+
+.card-servico h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.secao-contato {
+    min-height: 100vh;
+    padding: 100px 50px;
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 1;
+}
+
+.container-contato {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-contato h2 {
+    color: #39b115;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.info-contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contato-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.contato-texto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.luigi-img {
+    flex: 1;
+    text-align: center;
+}
+
+.luigi-img img {
+    max-width: 300px;
+    height: auto;
+}
+
 @media (max-width: 700px) {
 
     .caixa-principal {
@@ -200,17 +304,45 @@ textarea {
         align-items: center;
         font-size: 11px;
         color: white;
-        gap: 20px;
+        gap: 15px;
         margin: 20px;
         position: fixed;
-        margin-left: 20pix;
+        z-index: 1000;
         cursor: pointer;
         transition: 0.5s color ease-in-out;
     }
 
+    .header a {
+        text-decoration: none;
+        color: white;
+    }
+
     .header a:hover {
         color: #f10707;
-        font-size: 18px;
+        font-size: 13px;
+    }
+
+    .grid-servicos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .container-servicos h2,
+    .container-contato h2 {
+        font-size: 2rem;
+    }
+
+    .info-contato {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contato-texto {
+        text-align: center;
+    }
+
+    .luigi-img img {
+        max-width: 200px;
     }
 
     .caixa-texto {
@@ -233,10 +365,15 @@ textarea {
         bottom: 20px;
     }
 
-    vedeo {
+    video {
         margin-top: 0;
         margin-bottom: 0;
         width: 100%;
         height: 100%;
+    }
+
+    .secao-servicos,
+    .secao-contato {
+        padding: 50px 20px;
     }
 }
