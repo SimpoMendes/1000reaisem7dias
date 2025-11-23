@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Nunito:wght@400;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 
@@ -47,6 +48,8 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     transition: 0.5s color ease-in-out;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -56,6 +59,7 @@ button:hover {
 
 body {
     height: 100vh;
+    font-family: 'Nunito', sans-serif;
 }
 
 .caixa-principal {
@@ -190,6 +194,8 @@ textarea {
     font-size: 3rem;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: 'Orbitron', monospace;
+    font-weight: 900;
 }
 
 .grid-servicos {
@@ -213,8 +219,10 @@ textarea {
 }
 
 .card-servico h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 15px;
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
 }
 
 .secao-contato {
@@ -236,6 +244,8 @@ textarea {
     font-size: 3rem;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family: 'Orbitron', monospace;
+    font-weight: 900;
 }
 
 .info-contato {
